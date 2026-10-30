@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+.header {
+  background-color: #ffffff;
+  padding: 1.25rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.book-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.book-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.book-card p {
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.btn {
+  padding: 0.55rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.primary-btn {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.secondary-btn {
+  background-color: #e2e8f0;
+  color: #1e293b;
+}
+
+.status-read {
+  background-color: #dcfce7;
+  color: #166534;
+  flex: 1;
+}
+
+.status-unread {
+  background-color: #fef9c3;
+  color: #854d0e;
+  flex: 1;
+}
+
+.remove-btn {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.book-dialog {
+  margin: auto;
+  padding: 1.75rem;
+  border: none;
+  border-radius: 10px;
+  width: min(90%, 380px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.book-dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+#book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"] {
+  padding: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  font-size: 0.95rem;
+}
+
+.checkbox-group {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
